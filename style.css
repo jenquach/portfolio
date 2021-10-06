@@ -1,14 +1,179 @@
 @font-face {
   font-family: Montserrat;
   src: url(fonts/Montserrat-Black.ttf);
+}
 
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Black.ttf);
+  src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url(fonts/Roboto-Medium.ttf);
 }
 
 body {
-  background-color: rgb(228, 228, 114);
+  font-family: Roboto, Montserrat;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("nature.jpg");
+  background-size: cover;
+  height: 375px;
+  width: 520px; 
+}
+
+/* li {
+  list-style: none;
+}
+
+.list-item {
+  display: inline;
+}
+
+.list-item img {
+  width: 50px;
+  height: 50px;
+} */
+
+.top-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.all-icons {
+  position: absolute;
+  width; 130.5px;
+  height: 40px;
+  top: 48px;
+  left: 220px;
+}
+ 
+.border-icons {
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #FFF;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 5px;
+
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  color: whitesmoke;
+  height: 100%;
+}
+
+.header-text {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-column-end: 2 span;
+}
+
+.header-text h1{
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 4%;
+}
+
+.header-text .name{
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 4%;
+}
+
+h1 .role {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.profile-image {
+  object-fit: cover;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 171px;
+  top: 356px;
+  border-radius: 50%; 
+  border: whitesmoke 2px solid;
+}
+
+
+/* Header ends */
+
+
+
+.portfolio-section:nth-child(2n) {
+  background-color: #F4F4F4;
+}
+
+.container {
+  width: 327px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: Montserrat-Bold;
+  background-color: #FA382F;
+  color: #FFF;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3px;
+}
+
+.image-container {
+  
+}
+/* 
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(156, 166, 197, 0.5)  
+} */
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
 }
