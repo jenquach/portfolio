@@ -8,51 +8,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Portfolio</title>
+    <title>Jenny Quach, Developer Portfolio</title>
 </head>
 <body>
+
+  <!-- Header section -->
+
   <header class="header-container">
-    <div class="top-div">
       <div class="all-icons">
         <a class="border-icons" title="link to Jennys LinkedIn profile" tabindex="0"
           href="">
-          <i class="fab fa-linkedin-in"></i>
+          <img class="icons" src="linkedin.png" alt="" srcset="">
         </a>
         <a class="border-icons" title="link to Jennys GitHub profile" 
           href="https://github.com/jenquach" tabindex="0">
-          <i class="fab fa-github"></i>
+          <img class="icons" src="github.png" alt="" srcset="">
         </a>
         <a class="border-icons" title="link to Jennys Stack Overflow profile" tabindex="0"
           href="">
-          <i class="fab fa-stack-overflow"></i>
+          <img class="icons" src="stackoverflow.png" alt="" srcset="">
         </a>
       </div>
-    </div>  
     <div class="wrapper">
       <div class="header-text">
-        <h1>portfolio: 
+        <h1 class="name-header">portfolio: 
           <span class="name">jenny quach</span>
         </h1>
         <h1 class="role">frontend developer</h1>
       </div>
-      <img class="profile-image" src="jenny.jpg" alt="profile picture of Jenny Quach"> 
+      <img class="profile-img" src="jenny.jpg" alt="profile picture of Jenny Quach"> 
     </div> 
   </header> 
   
-  <section class="tech-section">
+  <!-- Intro section -->
+
+  <section class="intro-section">
     <div class="container"> 
         <article>         
           <div>
-            <p>Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at <3.  I’m all about solving problems that matter and creating awesome, meaningful products for people to love.</p>
+            <p><span class="line"></span><span class="dot"></span> Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at <3.  I’m all about solving problems that matter and creating awesome, meaningful products for people to love.</p>
           </div>
         </article>
     </div>  
   </section>
 
+  <!-- Tech section -->
+
   <section class="tech-section">
     <div class="container">
       <div class="heading-container">
-        <h1 class="heading">tech</h1>
+        <h1 class="heading"><span class="text-bakground">tech</span></h1>
       </div>  
         <article>         
           <div>
@@ -63,58 +68,215 @@
     </div>  
   </section>
 
-  <section class="portfolio-section">
+  <!-- Portfolio section -->
+
+  <section class="portfolio-section section">
     <div class="container">
       <div class="heading-container">
-        <h1 class="heading">featured projects</h1>
+        <h1 class="heading"><span class="text-bakground">featured projects</span></h1>
       </div>  
-        <article>
+        <article class="project-1">
           <div class="image-container">
             <div class="overlay">
-              <img class="image" src=spring-nature.jpg alt="project image">
+              <img class="img" src=github-tracker.png alt="project image">
             </div>
           </div>
-          
           <div>
-            <h2>chatbot built in javascript</h2>
-            <p>Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders</p>
+            <h2 class="projects-title">chatbot built in javascript</h2>
+            <p class="projects-text">Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders.</p>
             <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript ES6</span>
+              <span class="word-box">HTML5</span>
+              <span class="word-box">CSS3</span>
+              <span class="word-box"> JavaScript ES6</span>
             </div>
           </div>
         </article>
+
+        <article class="project-2">
+          <div class="image-container">
+            <div class="overlay">
+              <img class="img" src=chatbot.png alt="project image">
+            </div>
+          </div>
+          <div>
+            <h2 class="projects-title">chatbot built in javascript</h2>
+            <p class="projects-text">Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders.</p>
+            <div>
+              <span class="word-box">HTML5</span>
+              <span class="word-box">CSS3</span>
+              <span class="word-box">JavaScript ES6</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-3">
+          <div class="image-container">
+            <div class="overlay">
+              <img class="image" src=news-site.png alt="project image">
+            </div>
+          </div>
+          <div>
+            <h2 class="projects-title">chatbot built in javascript</h2>
+            <p class="projects-text">Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders.</p>
+            <div>
+              <span class="word-box">HTML5</span>
+              <span class="word-box">CSS3</span>
+              <span class="word-box">JavaScript ES6</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-4">
+          <div class="image-container">
+            <div class="overlay">
+              <img class="image" src=business-site.png alt="project image">
+            </div>
+          </div>
+          <div>
+            <h2 class="projects-title">chatbot built in javascript</h2>
+            <p class="projects-text">Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders.</p>
+            <div>
+              <span class="word-box">HTML5</span>
+              <span class="word-box">CSS3</span>
+              <span class="word-box">JavaScript ES6</span>
+            </div>
+          </div>
+        </article>
+      </div>  
+  </section>
+
+  <!-- Other projects section -->
+
+  <section class="other-projects-section section">
+    <div class="container">
+      <div class="heading-container">
+        <h1 class="heading heading-other">other projects</h1>
+      </div>  
+      <article>
+        <div>
+          <h2 class="other-projects-title">weather app.</h2>
+          <p class="projects-text">Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders. <span class="arrow-link">>></span></p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h2 class="other-projects-title">weather app.</h2>
+          <p class="projects-text">Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders. <span class="arrow-link">>></span></p>
+        </div>
+      </article>
     </div>  
   </section>
+
+  <!-- My thoughts section -->
   
-  <!-- <section class="portfolio-section">
+  <section class="mythoughts-section section">
     <div class="container">
-      <div class="portfolio-heading-container">
-        <h1 class="portfolio-heading">featured projects</h1>
-        <article>
-          <div class="image-container">
-            <div class="overlay">
-              <img class="image" src=nature.jpg alt="project image">
-            </div>
+      <div class="heading-container">
+        <h1 class="heading"><span class="text-bakground">my thoughts</span></h1>
+      </div>  
+      <article>
+        <div class="image-container">
+          <div class="overlay">
+            <img class="img" src=spring-nature.jpg alt="project image">
           </div>
-          
-          <div>
-            <h2>chatbot built in javascript</h2>
-            <p>Responsive website built with HTML, CSS, JavaScript ES6 for sushi orders</p>
-            <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript ES6</span>
-            </div>
-          </div>
-        </article>
+        </div>
+        <div>
+          <h2 class="thoughts-title">oct 2021</h2>
+          <h3 class="thoughts-second-title">How to stop being scared: Learning to love code</h3>
+          <p class="thoughts-text">How to stop being scared: Learning to love code</p>
+        </div>
+      </article>
+    </div>  
+  </section>
+
+  <!-- More thoughts section -->
+
+  <section class="more-thoughts-section section">
+    <div class="container">
+      <div class="heading-container">
+        <h1 class="heading heading-other">more thoughts</h1>
+      </div>  
+      <div class="thoughs-list">
+        <ul>
+          <li class="list-item">
+            <p><span class="date">oct 2021</span> 5 Apps that will make coding easier <span class="arrow-link">>></span></p>
+          </li>
+          <li class="list-item">
+            <p><span class="date">oct 2021</span> 5 Apps that will make coding easier <span class="arrow-link">>></span></p>
+          </li>
+          <li class="list-item">
+            <p><span class="date">oct 2021</span> 5 Apps that will make coding easier <span class="arrow-link">>></span></p>
+          </li>
+        </ul>
       </div>
     </div>  
-  </section> -->
+  </section>
 
+  <!-- Skills section -->
 
+  <section class="skills-section section">
+    <div class="container">
+      <div class="heading-container">
+        <h1 class="heading"><span class="text-bakground">skills</span></h1>
+      </div>  
+        <div class="skill-wrapper">         
+          <ul>
+            <li class="list-item list-title">code</li>
+            <li class="list-item">html5</li>
+            <li class="list-item">css3</li>
+          </ul>
+          <ul>
+            <li class="list-item list-title">toolbox</li>
+            <li class="list-item">vsc</li>
+            <li class="list-item">postman</li>
+          </ul>
+          <ul>
+            <li class="list-item list-title">upcoming</li>
+            <li class="list-item">redux</li>
+            <li class="list-item">node.js</li>
+          </ul>
+        </div>
+    </div>  
+  </section>
 
+  <!-- For more section -->
 
+  <section class="formore-section section">
+    <div class="container">
+      <div class="heading-container">
+        <h1 class="heading"><span class="text-bakground">for more</span></h1>
+      </div>  
+        <div class="more-wrapper">         
+          <ul>
+            <li class="list-item">
+              <img class="icons" src="linkedin-pink.png" alt="" srcset="">
+            </li>
+            <li class="list-item">
+              <img class="icons" src="github-pink.png" alt="" srcset="">
+            </li>
+            <li class="list-item">
+              <img class="icons" src="stackoverflow-pink.png" alt="" srcset="">
+            </li>
+          </ul>
+        </div>
+    </div>  
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="heading-container">
+        <h1 class="heading contact-heading">contact</h1>
+      </div>  
+        <div class="contact-wrapper">         
+          <ul>
+            <li class="list-item">Jenny Quach</li>
+            <li class="list-item">+46 762 274 881</li>
+            <li class="list-item">quach.jen@gmail.com</li>
+          </ul>
+        </div>
+    </div>  
+  </section>
 </body>
 </html>
