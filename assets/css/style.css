@@ -7,27 +7,27 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url(fonts/Montserrat-Thin.ttf);
+  src: url(../fonts/Montserrat-Thin.ttf);
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url(fonts/Montserrat-Bold.ttf);
+  src: url(../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Light.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
 }
 
 @font-face {
   font-family: RobotoBold;
-  src: url(fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
   font-family: RobotoMedium;
-  src: url(fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Medium.ttf);
 }
 
 body {
@@ -39,10 +39,10 @@ body {
 
 /* Header */
 .header-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("nature.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../img/nature.jpg);
   background-size: cover;
   height: 520px;
-  width: 375px; 
+  width: 100%;
 }
 
 .icons {
@@ -103,7 +103,7 @@ body {
   position: absolute;
   width: 180px;
   height: 180px;
-  left: 171px;
+  right: 24px;
   top: 356px;
   border-radius: 50%; 
   object-fit: cover;
@@ -117,12 +117,23 @@ body {
 /* Sections start */
 
 .section:nth-child(2n) {
-  background-color: #fcf6f6b8
+  background-color: #F4F4F4
 }
 /* bd7676 */
 .intro-section {
   margin-top: 49px;
   line-height: 28px;
+}
+
+.intro-section article {
+  min-width: 300px;
+  margin: 0 40px
+}
+
+.intro-section .intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-section p {
@@ -171,6 +182,10 @@ body {
   text-align: center;
 }
 
+.tech-container {
+  margin: 0 40px;
+}
+
 .portfolio-section {
   margin-top: 50px;
   line-height: 28px;
@@ -188,10 +203,6 @@ body {
 .heading .text-bakground {
   padding: 3px;
   background-color: var(--title-bg-color);
-}
-
-.project-3, .project-4 {
-  display: none;
 }
 
 .projects-title {
@@ -220,15 +231,19 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   padding: 5px;
-  background-color: #7EB5A6;
+  background-color: #a1d3c6;
+}
+
+.project-3, .project-4 {
+  display: none;
 }
 
 /* Other projects */
 
-.heading-other {
+/* .heading-other {
   margin-top: 50px;
-  color: var(--title-bg-color);
-}
+  background-color: var(--title-bg-color);
+} */
 
 .other-projects-title {
   color: var(--title-bg-color);
@@ -258,10 +273,16 @@ body {
 }
 
 /* skills section */
-
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .skill-wrapper {
   display: flex;
   justify-content: space-around;
+  min-width: 300px;
 }
 
 .list-title {
@@ -317,13 +338,99 @@ body {
   padding: 2px 0;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
+@media (min-width: 1100px) {
+  .header-container {
+    height: 668px;
+  }
+
+  .all-icons {
+    right: 170px;
+  }
+
+  .header-text .name {
+    font-size: 20px;
+  }
+
+  .header-text .name-header {
+  font-size: 26px;
+  }
+
+  .role {
+    font-size: 100px;
+    line-height: 105px;
   }
 
   .heading {
     font-size: 48px;
   }
+
+  .profile-img {
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    right: 80px;
+    top: 378px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-section .intro-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-section p {
+    font-size: 30px;
+  }
+
+  .intro-section article {
+    width: 1000px;
+  }
+
+  .tech-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tech-section article, .other-projects-section article {
+    font-size: 30px;
+    width: 1000px;
+  }
+
+  .project-wrapper {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  .project-3, .project-4 {
+    display: block;
+  }
+
+  .img, .image {
+    display: block;
+    width: 300px;
+  }
+
+  .other-projects-section .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .other-projects-section article {
+    width: 600px;
+  }
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

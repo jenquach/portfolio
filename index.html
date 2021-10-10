@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,15 +18,15 @@
       <div class="all-icons">
         <a class="border-icons" title="link to Jennys LinkedIn profile" tabindex="0"
           href="">
-          <img class="icons" src="linkedin.png" alt="" srcset="">
+          <img class="icons" src="assets/img/linkedin.png" alt="" srcset="">
         </a>
         <a class="border-icons" title="link to Jennys GitHub profile" 
           href="https://github.com/jenquach" tabindex="0">
-          <img class="icons" src="github.png" alt="" srcset="">
+          <img class="icons" src="assets/img/github.png" alt="" srcset="">
         </a>
         <a class="border-icons" title="link to Jennys Stack Overflow profile" tabindex="0"
           href="">
-          <img class="icons" src="stackoverflow.png" alt="" srcset="">
+          <img class="icons" src="assets/img/stackoverflow.png" alt="" srcset="">
         </a>
       </div>
     <div class="wrapper">
@@ -36,17 +36,17 @@
         </h1>
         <h1 class="role">frontend developer</h1>
       </div>
-      <img class="profile-img" src="jenny.jpg" alt="profile picture of Jenny Quach"> 
+      <img class="profile-img" src="assets/img/jenny.jpg" alt="profile picture of Jenny Quach"> 
     </div> 
   </header> 
   
   <!-- Intro section -->
 
-  <section class="intro-section">
-    <div class="container"> 
+  <section class="intro-section section">
+    <div class="intro-container"> 
         <article>         
           <div>
-            <p><span class="line"></span><span class="dot"></span> Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at <3.  I’m all about solving problems that matter and creating awesome, meaningful products for people to love.</p>
+            <p><span class="line"></span><span class="dot"></span>Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at <3. I’m all about solving problems that matter and creating awesome, meaningful products for people to love.</p>
           </div>
         </article>
     </div>  
@@ -55,30 +55,31 @@
   <!-- Tech section -->
 
   <section class="tech-section">
-    <div class="container">
-      <div class="heading-container">
-        <h1 class="heading"><span class="text-bakground">tech</span></h1>
-      </div>  
-        <article>         
-          <div>
-            <p> HTML, CSS, Flexbox,<span class="coloured-text">JavaScript</span>, ES6, JSX,<span class="coloured-text">React, React Hooks, Redux,</span>  
-              Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
-          </div>
-        </article>
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">tech</span></h1>
+    </div> 
+    <div class="tech-container">
+      <article>         
+        <div>
+          <p> HTML, CSS, Flexbox,<span class="coloured-text">JavaScript</span>, ES6, JSX,<span class="coloured-text">React, React Hooks, Redux,</span>  
+            Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
+        </div>
+      </article>
     </div>  
   </section>
 
   <!-- Portfolio section -->
 
   <section class="portfolio-section section">
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">featured projects</span></h1>
+    </div>  
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading"><span class="text-bakground">featured projects</span></h1>
-      </div>  
-        <article class="project-1">
+      <div class="project-wrapper">
+        <article class="project-1 card">
           <div class="image-container">
             <div class="overlay">
-              <img class="img" src=github-tracker.png alt="project image">
+              <img class="img" src=assets/img/github-tracker.png alt="project image">
             </div>
           </div>
           <div>
@@ -92,10 +93,10 @@
           </div>
         </article>
 
-        <article class="project-2">
+        <article class="project-2 card">
           <div class="image-container">
             <div class="overlay">
-              <img class="img" src=chatbot.png alt="project image">
+              <img class="img" src=assets/img/chatbot.png alt="project image">
             </div>
           </div>
           <div>
@@ -109,10 +110,10 @@
           </div>
         </article>
 
-        <article class="project-3">
+        <article class="project-3 card">
           <div class="image-container">
             <div class="overlay">
-              <img class="image" src=news-site.png alt="project image">
+              <img class="image" src=assets/img/news-site.png alt="project image">
             </div>
           </div>
           <div>
@@ -126,10 +127,10 @@
           </div>
         </article>
 
-        <article class="project-4">
+        <article class="project-4 card">
           <div class="image-container">
             <div class="overlay">
-              <img class="image" src=business-site.png alt="project image">
+              <img class="image" src="assets/img/business-site.png" alt="project image">
             </div>
           </div>
           <div>
@@ -143,15 +144,16 @@
           </div>
         </article>
       </div>  
+    </div>  
   </section>
 
   <!-- Other projects section -->
 
   <section class="other-projects-section section">
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">other projects</span></h1>
+    </div> 
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading heading-other">other projects</h1>
-      </div>  
       <article>
         <div>
           <h2 class="other-projects-title">weather app.</h2>
@@ -171,15 +173,13 @@
   <!-- My thoughts section -->
   
   <section class="mythoughts-section section">
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">my thoughts</span></h1>
+    </div>
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading"><span class="text-bakground">my thoughts</span></h1>
-      </div>  
       <article>
         <div class="image-container">
-          <div class="overlay">
-            <img class="img" src=spring-nature.jpg alt="project image">
-          </div>
+            <img class="img" src="assets/img/nature.jpg" style="margin:0;" alt="project image">
         </div>
         <div>
           <h2 class="thoughts-title">oct 2021</h2>
@@ -193,10 +193,10 @@
   <!-- More thoughts section -->
 
   <section class="more-thoughts-section section">
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">more thoughts</span></h1>
+    </div>  
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading heading-other">more thoughts</h1>
-      </div>  
       <div class="thoughs-list">
         <ul>
           <li class="list-item">
@@ -209,73 +209,73 @@
             <p><span class="date">oct 2021</span> 5 Apps that will make coding easier <span class="arrow-link">>></span></p>
           </li>
         </ul>
-      </div>
+    </div>
     </div>  
   </section>
 
   <!-- Skills section -->
 
   <section class="skills-section section">
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">skills</span></h1>
+    </div>  
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading"><span class="text-bakground">skills</span></h1>
-      </div>  
-        <div class="skill-wrapper">         
-          <ul>
-            <li class="list-item list-title">code</li>
-            <li class="list-item">html5</li>
-            <li class="list-item">css3</li>
-          </ul>
-          <ul>
-            <li class="list-item list-title">toolbox</li>
-            <li class="list-item">vsc</li>
-            <li class="list-item">postman</li>
-          </ul>
-          <ul>
-            <li class="list-item list-title">upcoming</li>
-            <li class="list-item">redux</li>
-            <li class="list-item">node.js</li>
-          </ul>
-        </div>
+      <div class="skill-wrapper">         
+        <ul>
+          <li class="list-item list-title">code</li>
+          <li class="list-item">html5</li>
+          <li class="list-item">css3</li>
+        </ul>
+        <ul>
+          <li class="list-item list-title">toolbox</li>
+          <li class="list-item">vsc</li>
+          <li class="list-item">postman</li>
+        </ul>
+        <ul>
+          <li class="list-item list-title">upcoming</li>
+          <li class="list-item">redux</li>
+          <li class="list-item">node.js</li>
+        </ul>
+      </div>
     </div>  
   </section>
 
   <!-- For more section -->
 
   <section class="formore-section section">
+    <div class="heading-container">
+      <h1 class="heading"><span class="text-bakground">for more</span></h1>
+    </div>  
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading"><span class="text-bakground">for more</span></h1>
-      </div>  
-        <div class="more-wrapper">         
-          <ul>
-            <li class="list-item">
-              <img class="icons" src="linkedin-pink.png" alt="" srcset="">
-            </li>
-            <li class="list-item">
-              <img class="icons" src="github-pink.png" alt="" srcset="">
-            </li>
-            <li class="list-item">
-              <img class="icons" src="stackoverflow-pink.png" alt="" srcset="">
-            </li>
-          </ul>
-        </div>
+      <div class="more-wrapper">         
+        <ul>
+          <li class="list-item">
+            <img class="icons" src="assets/img/linkedin-pink.png" alt="" srcset="">
+          </li>
+          <li class="list-item">
+            <img class="icons" src="assets/img/github-pink.png" alt="" srcset="">
+          </li>
+          <li class="list-item">
+            <img class="icons" src="assets/img/stackoverflow-pink.png" alt="" srcset="">
+          </li>
+        </ul>
+      </div>
     </div>  
   </section>
 
   <!-- Contact section -->
   <section class="contact-section">
+    <div class="heading-container">
+      <h1 class="heading contact-heading">contact</h1>
+    </div> 
     <div class="container">
-      <div class="heading-container">
-        <h1 class="heading contact-heading">contact</h1>
-      </div>  
-        <div class="contact-wrapper">         
-          <ul>
-            <li class="list-item">Jenny Quach</li>
-            <li class="list-item">+46 762 274 881</li>
-            <li class="list-item">quach.jen@gmail.com</li>
-          </ul>
-        </div>
+      <div class="contact-wrapper">         
+        <ul>
+          <li class="list-item">Jenny Quach</li>
+          <li class="list-item">+46 762 274 881</li>
+          <li class="list-item">quach.jen@gmail.com</li>
+        </ul>
+      </div>
     </div>  
   </section>
 </body>
