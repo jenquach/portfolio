@@ -1,5 +1,5 @@
 :root {
-  --bg-color: whitesmoke;
+  --bg-color: #fff;
   --detail-bg-color: #e2b868;
   --title-bg-color: #ed7e4f;
   --white-color: #fff;
@@ -70,7 +70,7 @@ body {
   padding-right: 20px;
   grid-column-start: 2;
   grid-row-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 5;
 }
 
 .header-text .name-header {
@@ -90,13 +90,22 @@ body {
   letter-spacing: 4%;
 }
 
-.role {
+.role-1 {
   font-family: Roboto;
   letter-spacing: 4%;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
-  margin-top: 0;
+  margin: 0;
+}
+
+.role-2 {
+  font-family: Roboto;
+  letter-spacing: 4%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 49px;
+  margin: 0;
 }
 
 .profile-img {
@@ -110,16 +119,12 @@ body {
   border: var(--bg-color) 2px solid;
 }
 
-
-/* Header ends */
-
-
 /* Sections start */
 
 .section:nth-child(2n) {
   background-color: #F4F4F4
 }
-/* bd7676 */
+
 .intro-section {
   margin-top: 49px;
   line-height: 28px;
@@ -428,12 +433,13 @@ body {
   }
 
   .projects-text {
-    font-size: 25px
+    font-size: 25px;
     line-height: 41px;
     margin: 0;
     font-weight: 400;
   }
-/* 
+
+  /* 
   .other-projects-section .container {
     flex-direction: column;
     justify-content: center;
@@ -452,8 +458,7 @@ body {
   .other-projects-title {
     font-size: 25px;
     line-height: 33px;
-   }
-
+  }
 
   .card {
     display: flex;
@@ -466,6 +471,5 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
-
   }
 }
