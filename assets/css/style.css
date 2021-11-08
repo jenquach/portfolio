@@ -38,6 +38,7 @@ body {
 }
 
 /* Header */
+
 .header-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../img/nature.jpg);
   background-size: cover;
@@ -45,16 +46,30 @@ body {
   width: 100%;
 }
 
-.icons {
-  padding: 2px;
-  width: 40px;
-  height: 40px;
-}
-
-.all-icons {
+.header-icons {
   position: absolute;
   top: 48px;
   right: 24.5px;
+  width: 130.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-icons .fab {
+  color:#F4F4F4;
+}
+
+.header-icons .fab:hover {
+  color: var(--title-bg-color);
+  transition: 0.2s ease-in;
+}
+
+.icons {
+  border: 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
 }
 
 .wrapper {
@@ -126,7 +141,7 @@ body {
 }
 
 .intro-section {
-  margin-top: 49px;
+  padding: 49px;
   line-height: 28px;
 }
 
@@ -181,8 +196,8 @@ body {
 }
 
 .tech-section {
+  padding-bottom: 20px;
   font-size: 17px;
-  margin-top: 50px;
   line-height: 29px;
   text-align: center;
 }
@@ -192,8 +207,9 @@ body {
 }
 
 .portfolio-section {
-  margin-top: 50px;
-  line-height: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 50px;
 }
 
 .img {
@@ -248,13 +264,6 @@ body {
   display: none;
 }
 
-/* Other projects */
-
-/* .heading-other {
-  margin-top: 50px;
-  background-color: var(--title-bg-color);
-} */
-
 .heading-other-projects {
   color: var(--title-bg-color);
   text-transform: uppercase;
@@ -263,6 +272,10 @@ body {
   text-align: center;
   padding: 40px 0 0 0;
   font-weight: 700;
+}
+
+.other-projects-section {
+  padding-bottom: 20px;
 }
 
 .other-projects-title {
@@ -280,7 +293,8 @@ body {
 /* my thoughts section */
 
 .mythoughts-section {
-  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .thoughts-list ul { 
   padding: 0;
@@ -289,12 +303,18 @@ body {
   list-style: none;
 }
 
+.more-thoughts-section {
+ padding-bottom: 20px;
+}
+
 /* skills section */
+
 .skills-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 .skill-wrapper {
   display: flex;
@@ -321,6 +341,7 @@ body {
 }
 
 /* for more section */
+
 .more-wrapper {
   display: flex;
   justify-content: center;
@@ -335,6 +356,7 @@ body {
 }
 
 /* contact section */
+
 .contact-section {
   padding: 40px 0;
   background-color: #7EB5A6;
@@ -438,13 +460,6 @@ body {
     margin: 0;
     font-weight: 400;
   }
-
-  /* 
-  .other-projects-section .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
 
   .other-projects-section article {
     width: 1000px;
