@@ -330,7 +330,6 @@ body {
 .skills-section {
   display: flex;
   flex-direction: column;
- /*  justify-content: space-between; */
   align-items: center;
   padding-bottom: 20px;
   
@@ -425,6 +424,30 @@ body {
   list-style: none;
   text-align: center;
   padding: 2px 0;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+
+  .header-icons {
+    left: 80%;
+  }
+
+  .skills-section .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-wrapper {
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .skill-ul {
+    text-align: left;
+  }
 }
 
 /* DESKTOP */
@@ -538,14 +561,5 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
-  }
-}
-
-/* TABLET */
-
-@media (min-width: 768px) {
-
-  .header-icons {
-    left: 80%;
   }
 }
