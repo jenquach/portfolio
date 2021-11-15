@@ -434,6 +434,17 @@ body {
     left: 80%;
   }
 
+  .portfolio-section .card {
+    width: 35%;
+  }
+
+  .project-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .skills-section .container {
     width: 100%;
     display: flex;
@@ -514,15 +525,7 @@ body {
     width: 1000px;
   }
 
-  .project-wrapper {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    grid-gap: 40px;
-  }
-
-  .project-3, .project-4 {
-    display: block;
-  }
+  
 
   .img, .image {
     display: block;
