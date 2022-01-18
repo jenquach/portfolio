@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Jenny Quach's Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio with a collection of my latest frontend dev projects"
+    />
     <link rel="shortcut icon" href="assets/folder.png" type="icon">  
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://use.fontawesome.com/69396b42ec.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
       crossorigin="anonymous" />
-    <title>Jenny Quach, Developer Portfolio</title>
+    <title>Jenny Quach | Frontend Developer | Portfolio</title>
 </head>
 <body>
 
@@ -18,15 +23,15 @@
 
   <header class="header-container">
       <div class="header-icons">
-          <a title="link to Jennys LinkedIn" tabindex="0"
+          <a title="link to Jennys LinkedIn" target="blank"
           href="https://www.linkedin.com/in/jenquach/">
           <i class="fab fa-linkedin-in round-icons"></i>
           </a>
-          <a class="icons" title="link to Jennys GitHub" 
+          <a class="icons" title="link to Jennys GitHub" target="blank" 
           href="https://github.com/jenquach">
           <i class="fab fa-github round-icons"></i>
           </a>
-          <a class="icons" title="link to Jennys Stack Overflow"
+          <a class="icons" title="link to Jennys Stack Overflow" target="blank"
           href="https://stackoverflow.com/c/technigo/users/290">
           <i class="fab fa-stack-overflow round-icons"></i>
           </a>
@@ -50,9 +55,8 @@
         <article>         
           <div>
             <p><span class="line"></span><span class="dot"></span>
-              Hello! I’m Jenny, a frontend developer with fullstack ambition and a background in accounting.
-              I am a positive person with great analytical and problem solving skills and thrives in fast paced environments.
-              My ambition is to join a company that creates meaningful and sustainable softwares that is making a difference in the world.
+              Hello! I’m Jenny, a frontend developer with fullstack ambition and a background in business & administration.
+              I am a positive person with great analytical and problem solving skills that thrives in fast paced environments. I live for experiences, hence my drive and passion is to build creative, sustainable, problem solving user experiences for people to love.
             </p>
           </div>
         </article>
@@ -68,8 +72,8 @@
     <div class="tech-container">
       <article>         
         <div>
-          <p> HTML, CSS, Flexbox,<span class="coloured-text">JavaScript</span>, ES6, JSX,<span class="coloured-text">React, React Hooks, Redux,</span>  
-            Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
+          <p> HTML, CSS, Flexbox, <span class="coloured-text">JavaScript</span>, ES6, JSX, <span class="coloured-text">React, React Hooks, Redux, </span>  
+            Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming, Github.</p>
         </div>
       </article>
     </div>  
@@ -83,21 +87,41 @@
     </div>  
     <div class="container">
       <div class="project-wrapper">
+
         <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
+            <a href="https://my-happy-thought.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <div class="overlay">
+                <p class="overlay-text">happy thoughts</p>
+              </div>
+              <img class="img" src=assets/img/happythought.png alt="project image">
+            </a>
+          </div> 
+          <div>
+            <h2 class="projects-title">twitter like app built with react</h2>
+            <p class="projects-text">A positive app for posting and liking Happy Thoughts, built with React using API data.</p>
+            <div>
+              <span class="word-box">JavaScript ES6</span>
+              <span class="word-box">API</span>
+              <span class="word-box">REACT</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="overlay-container">
             <a href="https://jds-labyrinth-game.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">Maze game</p>
+                <p class="overlay-text">Maze game</p>
               </div>
               <img class="img" src=assets/img/labyrinth.png alt="project image">
             </a>
           </div>   
           <div>
-            <h2 class="projects-title">maze game built using redux</h2>
-          
+            <h2 class="projects-title">maze game built using redux</h2> 
             <p class="projects-text">Game built in React using Redux toolkit.</p>
             <div>
-              <span class="word-box">JSX</span>
+              <span class="word-box">JavaScript ES6</span>
               <span class="word-box">REACT</span>
               <span class="word-box">REDUX</span>
             </div>
@@ -105,17 +129,17 @@
         </article>
 
         <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
             <a href="https://accomplistment.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">TODO LIST</p>
+                <p class="overlay-text">TODO LIST</p>
               </div>
               <img class="img" src=assets/img/todo.png alt="project image">
             </a>
           </div>   
           <div>
             <h2 class="projects-title">todo app built using redux</h2>
-            <p class="projects-text">A Twitter-like app built with React using Redux toolkit, where a user can both
+            <p class="projects-text">A Todo app built with React using Redux toolkit, where a user can both
               post a thought and see others' thoughts.</p>
             <div>
               <span class="word-box">Javascript ES6</span>
@@ -126,19 +150,19 @@
         </article>
 
         <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
             <a href="https://movie-quiz-app.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">moviequiz</p>
+                <p class="overlay-text">moviequiz</p>
               </div>
               <img class="img" src=assets/img/moviequiz.png alt="project image">
             </a>
           </div> 
           <div>
             <h2 class="projects-title">quiz app built using redux</h2>
-            <p class="projects-text">App built in REACT with team mates using REDUX TOOLKIT.</p>
+            <p class="projects-text">App built in React with team mates using Redux toolkit.</p>
             <div>
-              <span class="word-box">JSX</span>
+              <span class="word-box">JavaScript ES6</span>
               <span class="word-box">REACT</span>
               <span class="word-box">REDUX</span>
             </div>
@@ -146,17 +170,17 @@
         </article>
 
         <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
             <a href="https://serene-ride-8ae74a.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">movies</p>
+                <p class="overlay-text">movies</p>
               </div>
               <img class="img" src=assets/img/movies.png alt="project image">
             </a>
           </div> 
           <div>
             <h2 class="projects-title">Movie site app built with redux</h2>
-            <p class="projects-text">A pair-programmed movie site using REACT and API data.</p>
+            <p class="projects-text">A pair-programmed movie site using React and API data.</p>
             <div>
               <span class="word-box">HTML5</span>
               <span class="word-box">CSS3</span>
@@ -165,38 +189,11 @@
           </div>
         </article>
 
-        <!-- <article class="card">
-          <a href="https://my-happy-thought.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <div class="image-container">
-            <div class="overlay">
-              <img class="img" src="assets/img/happythought.png" alt="project image">
-            </div>
-          </div> -->
         <article class="card">
-          <div class="image-container">
-            <a href="https://my-happy-thought.netlify.app/" target="_blank" rel="noopener noreferrer">
-              <div class="overlay">
-                <p class="image-title">happy thoughts</p>
-              </div>
-              <img class="img" src=assets/img/happythought.png alt="project image">
-            </a>
-          </div> 
-          <div>
-            <h2 class="projects-title">twitter like app built with react</h2>
-            <p class="projects-text">A positive twitter like app built using REACT and API data.</p>
-            <div>
-              <span class="word-box">JSX</span>
-              <span class="word-box">API</span>
-              <span class="word-box">REACT</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
             <a href="https://j-j-music-app.netlify.app" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">music releases</p>
+                <p class="overlay-text">music releases</p>
               </div>
               <img class="img" src=assets/img/songs.png alt="project image">
             </a>
@@ -205,7 +202,7 @@
             <h2 class="projects-title">music release site built with react</h2>
             <p class="projects-text">A pair-programmed music site built with REACT and API from Spotify.</p>
             <div>
-              <span class="word-box">JSX</span>
+              <span class="word-box">JavaScript ES6</span>
               <span class="word-box">APIs</span>
               <span class="word-box">REACT</span>
             </div>
@@ -213,10 +210,10 @@
         </article>
 
         <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
             <a href="https://silly-borg-754f09.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">guess who game</p>
+                <p class="overlay-text">guess who game</p>
               </div>
               <img class="img" src=assets/img/guess-who-game.png alt="project image">
             </a>
@@ -227,24 +224,16 @@
             <div>
               <span class="word-box">HTML5</span>
               <span class="word-box">CSS3</span>
-              <span class="word-box">JSX</span>
+              <span class="word-box">JavaScript ES6</span>
             </div>
           </div>
         </article>
 
-        <!-- <article class="card">
-          <a href="https://week4-chatbot-migaro.netlify.app/" target="_blank" rel="noopener noreferrer"> 
-          <div class="image-container">
-            <div class="overlay">
-              <img class="img" src="assets/img/chatbot.png" alt="project image">
-            </div>
-          </div> -->
-
         <article class="card">
-          <div class="image-container">
+          <div class="overlay-container">
             <a href="https://week4-chatbot-migaro.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="overlay">
-                <p class="image-title">chatbot</p>
+                <p class="overlay-text">chatbot</p>
               </div>
               <img class="img" src=assets/img/chatbot.png alt="project image">
             </a>
@@ -255,7 +244,7 @@
             <div>
               <span class="word-box">HTML5</span>
               <span class="word-box">CSS3</span>
-              <span class="word-box">JSX</span>
+              <span class="word-box">JavaScript ES6</span>
             </div>
           </div>
         </article>
@@ -267,7 +256,7 @@
 
   <!-- <section class="other-projects-section section">
     <div class="heading-container">
-      <h1 class="heading-other-projects">other projects</h1>
+      <h1 class="heading"><span class="text-bakground">other projects</span></h1>
     </div> 
     <div class="container">
       <div class="thoughts-list">
@@ -283,41 +272,6 @@
     </div>  
   </section> -->
 
-  <!-- My thoughts section -->
-  
-  <!-- <section class="mythoughts-section section">
-    <div class="heading-container">
-      <h1 class="heading"><span class="text-bakground">my thoughts</span></h1>
-    </div>
-    <div class="container">
-      <div class="mythougts-wrapper">
-      <article>
-        <div class="image-container">
-            <img class="img" src="assets/img/spring-nature.jpg" style="margin:0;" alt="project image">
-        </div>
-        <div>
-          <h2 class="thoughts-title">oct 2021</h2>
-          <h3 class="thoughts-second-title">How to stop being scared: Learning to love code</h3>
-          <p class="thoughts-text">How to stop being scared: Learning to love code</p>
-        </div>
-      </article>
-    </div>
-  </section> -->
-    <!-- <div class="container">
-      <article>
-        <div class="image-container">
-            <img class="img" src="assets/img/spring-nature.jpg" style="margin:0;" alt="project image">
-        </div>
-        <div>
-          <h2 class="thoughts-title">oct 2021</h2>
-          <h3 class="thoughts-second-title">How to stop being scared: Learning to love code</h3>
-          <p class="thoughts-text">How to stop being scared: Learning to love code</p>
-        </div>
-      </article>
-      </div>
-    </div>    
-  </section> -->
-
   <!-- Skills section -->
 
   <section class="skills-section section">
@@ -331,11 +285,11 @@
           <li class="list-item">HTML5</li>
           <li class="list-item">CSS3</li>
           <li class="list-item">Javascript ES6</li>
-          <li class="list-item">API's</li>
           <li class="list-item">React</li>
-          <li class="list-item">React Native</li>
-          <li class="list-item">Styled Components</li>
           <li class="list-item">Redux</li>
+          <li class="list-item">Styled Components</li>
+          <li class="list-item">API's</li>
+          <li class="list-item">React Native</li>
           <li class="list-item">Node.js</li>
         </ul>
         <ul class="skill-ul">
@@ -345,21 +299,19 @@
           <li class="list-item">Stack Overflow</li>
           <li class="list-item">Figma</li>
           <li class="list-item">Slack</li>
-          <li class="list-item">Netlify</li>
-          <li class="list-item">CodePen</li>
           <li class="list-item">Postman</li>
         </ul>
         <ul class="skill-ul">
           <li class="list-item list-title">more</li>
           <li class="list-item">Agile Methodology</li>
-          <li class="list-item">Web Accesibility</li>
           <li class="list-item">Pair-programming</li>
           <li class="list-item">Mob-programming</li>
           <li class="list-item">Responsive design</li>
-        </ul>
-        <ul class="skill-ul">
-          <li class="list-item list-title">upcoming</li>
           <li class="list-item">MongoDB</li>
+          <li class="list-item">QlikView</li>
+          <li class="list-item">Qlik Sense</li>
+          <li class="list-item">Salesforce</li>
+          <li class="list-item">NetSuite</li>
         </ul>
       </div>
     </div>  
