@@ -107,7 +107,6 @@ body {
 }
 
 .header-text .name-header {
-  text-transform: uppercase;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -117,6 +116,7 @@ body {
 
 .header-text .name{
   font-family: Roboto;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -240,7 +240,6 @@ body {
   max-width: 100%
 }
 
-
 .img {
   display: block;
   max-width: 100%;
@@ -262,8 +261,10 @@ body {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 22px;
+  width: 100%;
+  top: 40%;
+  font-weight: 800;
+  font-size: 1.5rem;
   color: white;
   margin: 0;
 }
@@ -480,8 +481,7 @@ a {
   .project-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
+    justify-items: center;
   }
 
   .img {
