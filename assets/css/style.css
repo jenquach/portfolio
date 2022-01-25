@@ -265,7 +265,7 @@ body {
   top: 40%;
   font-weight: 800;
   font-size: 1.5rem;
-  color: white;
+  color: var(--white-color);
   margin: 0;
 }
 
@@ -317,6 +317,12 @@ a {
   letter-spacing: 0.01em;
   padding: 5px;
   background-color: #8cc7af;
+}
+
+a .word-box.github {
+  color: var(--white-color);
+  background-color: #161B21;
+  text-decoration: none;
 }
 
 .heading-other-projects {
@@ -551,7 +557,7 @@ a {
   }
 
   .intro-section p {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .intro-section article {
