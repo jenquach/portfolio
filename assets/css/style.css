@@ -177,7 +177,7 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 29px;
 }
 
@@ -203,7 +203,7 @@ body {
   font-family: Montserrat-Bold;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 27px;
   text-align: center;
   color: var(--white-color);
@@ -214,7 +214,7 @@ body {
 
 .tech-section {
   padding-bottom: 20px;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 29px;
   text-align: center;
 }
@@ -535,7 +535,7 @@ a .word-box.github {
   }
 
   .heading {
-    font-size: 48px;
+    font-size: 38px;
   }
 
   .profile-img {
@@ -556,9 +556,9 @@ a .word-box.github {
     justify-content: center;
   }
 
-  .intro-section p {
+  /* .intro-section p {
     font-size: 22px;
-  }
+  } */
 
   .intro-section article {
     width: 1000px;
@@ -570,7 +570,7 @@ a .word-box.github {
   }
 
   .tech-section article, .other-projects-section article {
-    font-size: 30px;
+    font-size: 20px;
     width: 1000px;
   }
 
@@ -609,10 +609,12 @@ a .word-box.github {
     line-height: 33px;
   }
 
-  .mythougts-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+  .list-title {
+    font-size: 24px;
+}
+
+  .list-item {
+    font-size: 18px;
   }
 }
 
